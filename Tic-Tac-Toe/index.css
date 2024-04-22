@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* box-sizing for better layout control */
+}
+
+body {
+    background-color: rgb(86, 172, 174);
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px; 
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 30px;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Adjusted grid layout for the boxes */
+    gap: 10px; /* Added gap between boxes */
+}
+
+.box {
+    height: 100px;
+    border: none; 
+    border-radius: 10px; 
+    font-size: 2em;
+    background-color: #10201b;
+    color: #9f9493;
+}
+
+.new {
+    margin-top: 20px;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px; 
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    border: none; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Added transition for smoother hover effect */
+}
+
+.new:hover {
+    background-color: #be293f; 
+}
+.box:hover{
+    height: 105px;
+    width: 105px;
+    z-index: 10;
+    background-color: darkred;
+    transition: background-color 0.6s ease;
+    
+}
